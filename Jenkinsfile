@@ -22,7 +22,7 @@ pipeline {
 								
 				
 											steps {
-														sh "docker build -t test:1.0 ."
+														sh "docker build -t test ."
 											
 				}
 				
@@ -33,7 +33,7 @@ pipeline {
 											steps {
 														
 														
-														sh  "docker push docker/test:1.0"
+														sh  "docker push chetanhiwase734/test"
 					
 				}	
 							
@@ -43,7 +43,7 @@ pipeline {
 						stage("run-docker-image") {
 						
 											steps {
-														sh "docker run -itdp 8080:8080  test:1.0"
+														sh "docker run -itdp 8080:8080  test"
 											
 			
 			}
