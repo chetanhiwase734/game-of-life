@@ -30,16 +30,7 @@ pipeline {
 						
 					
 						
-											stage('Publish image to Docker Hub') {
-          
-            steps {
-        withDockerRegistry([ credentialsId: "chetanhiwase734", url: "https://hub.docker.com/repositories/chetanhiwase734" ]) {
-          sh  'docker push test'
-        //  sh  'docker push test:$BUILD_NUMBER' 
-        }
-                  
-          }
-        }
+											
 			
 
 						stage("run-docker-image") {
