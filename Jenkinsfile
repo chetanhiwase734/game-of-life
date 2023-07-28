@@ -3,7 +3,7 @@ pipeline {
 		agent{
 				label {
 		
-						lavel "built-in"
+						label "built-in"
 			}
 			
 		}
