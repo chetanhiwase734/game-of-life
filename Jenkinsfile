@@ -9,28 +9,28 @@ pipeline {
 		}
 				stages {
 	
-						stage ("maven-execute") {
+						stage("maven-execute") {
 						
-												stapes {
+												steps {
 															sh "mvn install"
 												
 				}
 
 			}
 	
-						stage ("build-image") {
+						stage("build-image") {
 								
 				
-											stapes {
+											steps {
 														sh "docker build -t test:1.0"
 											
 				}
 				
 			}
 
-						stage ("run-docker-image") {
+						stage("run-docker-image") {
 						
-											stapes {
+											steps {
 														sh "docker run -itdp 8080:8080 test:1.00"
 											
 			}		
