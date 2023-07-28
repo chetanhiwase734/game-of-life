@@ -32,8 +32,8 @@ pipeline {
 						
 											steps {
 														
-														sh "docker commit test:1.0 chetanhiwase734/gameoflife:1.0"
-														sh  "docker push chetanhiwase734/gameoflife:1.0"
+														
+														sh  "docker push docker/test:1.0"
 					
 				}	
 							
@@ -43,7 +43,7 @@ pipeline {
 						stage("run-docker-image") {
 						
 											steps {
-														sh "docker run -itdp 8080:8080 --name test gameoflife:1.0"
+														sh "docker run -itdp 8080:8080  test:1.0"
 											
 			
 			}
