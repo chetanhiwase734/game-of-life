@@ -40,7 +40,7 @@ pipeline {
                   
           }
         }
-			
+		}	
 
 						stage("run-docker-image") {
 						
