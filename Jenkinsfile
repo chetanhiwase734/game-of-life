@@ -28,7 +28,7 @@ pipeline {
 				
 			}
 						
-						stage("dockerhub-push") {
+					
 						
 											stage('Publish image to Docker Hub') {
           
@@ -40,7 +40,7 @@ pipeline {
                   
           }
         }
-		}	
+			
 
 						stage("run-docker-image") {
 						
