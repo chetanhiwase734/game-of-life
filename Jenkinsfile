@@ -27,15 +27,29 @@ pipeline {
 				}
 				
 			}
-
-				
-					stage("dockerhub-access") {
+						
+						stage("dockerhub-push") {
 						
 											steps {
-		
-														sh "docker -H ssh://jenkins@52.66.245.66 run -itdp 8080:8080 test:1.0"
+														withDockerRegistry([ credentialsId: "chetanhiwase734", url: "https://hub.docker.com/u/chetanhiwase734" ]) {
+														
+														sh  "docker push test:1.0"
+					}		
+				}	
+							
+			}			
+			
+
+						stage("run-docker-image") {
+						
+											steps {
+														sh "docker run -itdp 8080:8080 test:1.00"
+											
+			
 			}
-		}			
+						
+		}
+					
 						
 	}
 
