@@ -33,7 +33,7 @@ pipeline {
 											steps {
 														
 														
-														sh  "docker push test:1.0"
+														sh  "sudo docker push chetanhiwase734/test:1.0"
 					
 				}	
 							
