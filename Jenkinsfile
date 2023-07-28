@@ -31,10 +31,10 @@ pipeline {
 						stage("dockerhub-push") {
 						
 											steps {
-														withDockerRegistry([ credentialsId: "chetanhiwase734", url: "https://hub.docker.com/u/chetanhiwase734" ]) {
 														
-														sh  "docker push test:1.0"
-					}		
+														
+														sh  "docker push chetanhiwase734/test:1.0"
+					
 				}	
 							
 			}			
@@ -49,7 +49,7 @@ pipeline {
 			}
 						
 		}
-					
+								
 						
 	}
 
