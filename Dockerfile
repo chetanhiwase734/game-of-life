@@ -4,6 +4,8 @@ LABEL maintainer="chetan hiwase"
 
 ADD ./gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/
 
-EXPOSE 8080
+ADD chmod -R 777 /usr/local/tomcat/webapps/
+
+EXPOSE 8081
 
 CMD ["catalina.sh", "run"]
