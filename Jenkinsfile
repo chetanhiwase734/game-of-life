@@ -28,15 +28,7 @@ pipeline {
 				
 			}
 
-						stage("run-docker-image") {
-						
-											steps {
-														sh "docker run -itdp 8080:8080 test:1.00"
-											
-			
-			}
-						
-		}
+				
 					stage("dockerhub-access") {
 						
 											steps {
