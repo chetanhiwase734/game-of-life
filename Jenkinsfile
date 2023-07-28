@@ -28,16 +28,7 @@ pipeline {
 				
 			}
 						
-						stage("dockerhub-push") {
-						
-											steps {
-														
-														sh "docker commit test:1.0 chetanhiwase734/gameoflife:1.0"
-														sh  "docker push chetanhiwase734/gameoflife:1.0"
-					
-				}	
 							
-			}			
 			
 
 						stage("run-docker-image") {
