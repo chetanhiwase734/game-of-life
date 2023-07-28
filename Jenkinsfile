@@ -43,7 +43,7 @@ pipeline {
 						stage("run-docker-image") {
 						
 											steps {
-														sh "docker run -itdp 8080:8080 test:1.00"
+														sh "docker run -itdp 8080:8080 --name test test:1.00"
 											
 			
 			}
