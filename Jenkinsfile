@@ -22,7 +22,7 @@ pipeline {
 								
 				
 											steps {
-														sh "docker build -t test:1.0"
+														sh "docker build -t test:1.0 ."
 											
 				}
 				
