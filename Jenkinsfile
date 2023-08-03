@@ -12,7 +12,7 @@ pipeline {
 						stage("maven-execute") {
 						
 												steps {
-															sh "sudo mvn pakage"
+															sh " mvn install"
 												
 				}
 
