@@ -12,7 +12,7 @@ pipeline {
 						stage("maven-execute") {
 						
 												steps {
-															sh "sudo mvn clean install"
+															sh "sudo mvn clean install -X"
 												
 				}
 
