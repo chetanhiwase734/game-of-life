@@ -3,7 +3,7 @@ pipeline {
 		agent{
 				label {
 		
-						label "slave-1"
+						label "built-in"
 			}
 			
 		}
