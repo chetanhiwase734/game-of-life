@@ -3,7 +3,7 @@ pipeline {
 		agent{
 				label {
 		
-						label "built-in"
+						label "slave-1"
 			}
 			
 		}
@@ -12,7 +12,7 @@ pipeline {
 						stage("maven-execute") {
 						
 												steps {
-															sh " mvn install"
+															sh "sudo mvn install"
 												
 				}
 
@@ -36,7 +36,7 @@ pipeline {
 						stage("run-docker-image") {
 						
 											steps {
-														sh "sudo docker run -itdp 8081:8080  test"
+														sh "sudo docker run -itdp 80:8080  test"
 											
 			
 			}
