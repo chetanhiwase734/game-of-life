@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
 
 		agent{
 				label {
@@ -46,4 +46,4 @@ pipeline {
 						
 	}
 
-}
+}*/
