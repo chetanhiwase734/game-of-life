@@ -38,7 +38,7 @@ pipeline {
 						stage("run-docker-image") {
 						
 											steps {
-														sh "sudo docker run -itdp 80:8080  test"
+														sh "sudo docker run -itdp 80:8080  --name test-1 test"
 											
 			
 			}
