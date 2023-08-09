@@ -1,9 +1,9 @@
-/*pipeline {
+pipeline {
 
 		agent{
 				label {
 		
-						label "built-in"
+						label "slave-1"
 			}
 			
 		}
@@ -46,4 +46,4 @@
 						
 	}
 
-}*/
+}
