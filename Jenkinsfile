@@ -12,7 +12,7 @@ pipeline {
 						stage("maven-execute") {
 						
 												steps {
-													//sh "sudo docker stop test"
+													sh "sudo docker stop test"
 													sh "sudo docker system prune -a -f "
 													sh "sudo mvn install"
 												
