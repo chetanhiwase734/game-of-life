@@ -2,7 +2,7 @@ FROM tomcat:latest
 
 LABEL maintainer="chetan-hiwase"
 
-ADD ./gameoflife-web/target/Lgameoflife.war /usr/local/tomcat/webapps/
+ADD ./gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
